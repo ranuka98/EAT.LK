@@ -1,0 +1,253 @@
+.header {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../../assets/images/pexels-ella-olsson-1640777\ 1.png");
+  background-size: cover;
+ 
+  min-height: 400px;
+  z-index: 111;
+  .navbar {
+      height: 70px;
+      display:flex;
+      align-items: center;
+      padding: 0 36px; 
+  
+      .logo {
+        img {
+          z-index: 22222;
+          width:100px;
+          padding:15 15px;
+        }
+      }
+      .navmenu {
+          display: flex;
+          flex: 1;
+          margin-left:20px;
+          align-items:center;
+  
+      a {
+              display: flex;
+              align-items:center;
+              padding: 15px 15px;
+              cursor:pointer;
+              color:white;
+              background: black;
+              margin-right:20px;
+              border-radius:20px;
+  
+      span {
+          font-size:13px;
+          
+          position:relative;
+          font-family: poppins;
+  
+          &:after {
+              content:"";
+              height:2px;
+              background:white;
+              position:absolute;
+              left:0;
+              right:0;
+              bottom: -6px;
+              transform-origin: left center;
+              transition: all 250ms ;
+              opacity:0;
+              transform: scaleX(0);
+          }
+  
+      }
+  
+      &:hover {
+          span:after {
+              transform:scaleX(1);
+              opacity:1;
+          }
+      }
+      }
+      }
+      
+      
+  }
+.userImg {
+    img {
+      width:50px;
+      height:50px;
+      border-radius:50px;
+      cursor:pointer;
+    }
+
+}  
+.mainBanner {
+    margin: 100px auto;
+    max-width: 600px;
+    font-size:40px;
+    font-family: poppins;
+    font-weight: bold;
+}
+}
+
+.wrapper {
+  margin-top: -25px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    margin-top: 2px;
+  }
+
+  .search_box {
+    width: 60%;
+    height: 86px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+    // psitoion: absolute;
+    // overflow: hidden;
+    @media screen and (max-width: 1546px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  .search_field {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    h2 {
+      font-family: Poppins;
+      padding-left: 5px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 2px;
+      display: flex;
+      color: #05244a;
+      transition: 0.5s;
+    }
+
+    .input {
+      width: 130%;
+      border: none;
+      font-size: 12px;
+      margin-left: 4px;
+
+      &:focus {
+        h2 {
+          font-size: 1em;
+        }
+        outline: none;
+      }
+    }
+    .input1 {
+      width: 100%;
+      border: none;
+      font-size: 12px;
+      margin-left: -96px;
+    }
+  }
+
+  .category-sec {
+    z-index: 8;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin-top: 70px;
+    margin-right: 190px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+//card styles
+
+.film-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease;
+  border-radius: 6px;
+  margin: 10px;
+  box-shadow: 0px 4px 30px rgba(66, 66, 66, 0.25);
+}
+.image-section {
+  position: relative;
+  overflow: hidden;
+  
+  width: 100%;
+  height: 250px;
+}
+.image-section img {
+  width: 100%;
+}
+
+.detail-section {
+  padding: 10px 20px;
+  background: white;
+  width: 100%;
+}
+.tour-name {
+  font-weight: 600;
+  font-size: 25px;
+  color: #67666b;
+  padding: 2px 0px;
+  text-align: left;
+}
+.tour-description {
+  font-weight: 300;
+  font-size: 12px;
+  color: #67666b;
+  padding: 2px 0px;
+  text-align: left;
+}
+.external-aperiance-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #67666b;
+  padding: 2px 0px;
+  text-align: left;
+}
+.external-aperiance-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9a9a9c;
+  padding: 2px 0px;
+  text-align: left;
+}
+.card-bottom {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.cust-button {
+  font-size: 16px;
+  padding: 15px 50px;
+  border-radius: 6px;
+  color: white !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  border: none !important;
+  background: black;
+}
+.card-section {
+  margin-top:40px;
+  margin-bottom:50px;
+}  

@@ -1,0 +1,8 @@
+<button (click)="handleLogout()">LOGOUT</button>
+<a routerLink="dashboard" *ngIf="authService.loggedIn()">Dashboard</a><br />
+<a routerLink="login/customer">Customer Login</a><br />
+<a routerLink="register/customer">Customer Register</a><br />
+<a routerLink="login/restaurant">Restaurant Login</a><br />
+<a routerLink="register/restaurant">Restaurant Register</a><br />
+<a routerLink="login/admin">Admin Login</a><br />
+<a routerLink="register/admin">Admin Register</a><br />

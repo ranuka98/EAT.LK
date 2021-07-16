@@ -1,0 +1,92 @@
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/images/bgimg.jpg");
+    background-size: cover;
+    .login {
+        width:40%;
+        background: #FFFFFF;
+        box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 27px;
+        display:flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 90px 0px;
+       &_form {
+        //    display:flex;
+        //    flex-direction: column;
+           width:50%;
+           margin: auto;
+           .logo {
+               img {
+                width: 20%;
+                position: absolute;
+                top: -45px;
+                left: 40%;
+               }
+           }
+           .header {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 37px;
+            color: #000000; 
+            text-align: center;
+           }
+           .form-group {
+            margin-bottom: 25px;
+            input,
+            label {
+              width: 100%;
+
+            }
+            label {
+              font-size: 0.95em;
+            }
+            input {
+              border: 2px solid #e4e4e4;
+            }
+          }
+          .forgotPs {
+            display: block;
+            text-align: right;
+            color:#F4E022;
+            text-decoration: none;
+            font-weight: 400;
+            font-family: poppins;
+          }
+          .loginBtn {
+            background: #F4E022;
+            color: black;
+            padding: 5px 30px;
+            border-radius: 30px;
+            border: none;
+            float: right;
+            margin-top: 30px;
+            font-family: poppins;
+          }
+          
+       } 
+       .createAc {
+        margin-top: 30px;
+        margin-bottom: -50px;
+        font-size:20px;
+        line-height: 30px;
+        display: block;
+        font-family: poppins;
+        a {
+            text-decoration: none;
+            color:#F4E022;
+            font-family: poppins;
+            font-size:20px;
+        }
+    }
+    }
+          
+}

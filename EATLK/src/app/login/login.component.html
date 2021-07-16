@@ -1,0 +1,27 @@
+<div class="main">
+  <div class="login">
+    <div class="login_form">
+      <div class="logo">
+        <img src="../../assets/images/logo_transparent.png" alt="eatlklogo">
+      </div>
+      <div class="header">
+        LOGIN
+      </div>
+      <form (submit)="handleLogin($event)">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" [(ngModel)]="username" name="username" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" [(ngModel)]="password" name="password" />
+        </div>
+        <a class="forgotPs" href="#">Forgot Password</a>
+        <button class="loginBtn" type="submit">LOGIN</button>
+      </form>
+    </div>
+    <div class="createAc">
+      New to EAT.LK? <a routerLink="../user-type">CREATE AN ACCOUNT</a>
+    </div>
+  </div>
+</div>
